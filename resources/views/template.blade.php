@@ -13,7 +13,7 @@
 
     <div class="container">
         <div class="mt-4 p-5 bg-primary text-white rounded">
-            <h3>Dimas Ananda D - 5026241113</h3>
+            <h3>Muhammad Hanifiansyah - 5026241136</h3>
             <h6>@yield('title')</h6>
         </div>
         <!-- Grey with black text -->
@@ -24,10 +24,10 @@
                         <a class="nav-link active" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PR 1</a>
+                        <a class="nav-link active" href="/eas">PR 1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PR 2</a>
+                        <a class="nav-link active" href="/nilaikuliah">PR 2</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">PR 3</a>

@@ -5,7 +5,8 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
-
+use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\NilaiController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -62,3 +63,14 @@ Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+// CRUD Tabel Keranjang Belanja (EAS)
+Route::get('/eas', [KeranjangController::class, 'index']);
+Route::get('/eas/tambah', [KeranjangController::class, 'create']);
+Route::post('/eas/store', [KeranjangController::class, 'store']);
+Route::get('/eas/batal/{id}', [KeranjangController::class, 'destroy']);
+
+
+Route::get('/nilaikuliah', [NilaiController::class, 'index']);
+Route::get('/nilaikuliah/tambah', [NilaiController::class, 'tambah']);
+Route::post('/nilaikuliah/store', [NilaiController::class, 'store']);
