@@ -6,7 +6,7 @@
             <th>ID</th><th>NRP</th><th>Nilai Angka</th><th>SKS</th>
             <th>Nilai Huruf</th><th>Bobot</th>
         </tr>
-        @foreach($nilaikuliah as $n)
+        @foreach($nilaimahasiswa as $n)
         @php
             if($n->NilaiAngka <= 40) $huruf = 'D';
             elseif($n->NilaiAngka <= 60) $huruf = 'C';
