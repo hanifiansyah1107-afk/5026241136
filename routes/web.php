@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\NilaiController;
+use App\Http\Controllers\BagianController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -74,3 +75,9 @@ Route::get('/eas/batal/{id}', [KeranjangController::class, 'destroy']);
 Route::get('/nilaikuliah', [NilaiController::class, 'index']);
 Route::get('/nilaikuliah/tambah', [NilaiController::class, 'tambah']);
 Route::post('/nilaikuliah/store', [NilaiController::class, 'store']);
+
+
+
+Route::get('/bagian', [BagianController::class, 'index']);
+Route::get('/bagian/tambah', [BagianController::class, 'tambah']);
+Route::post('/bagian/store', [BagianController::class, 'store']);
