@@ -33,7 +33,7 @@
                         <a class="nav-link active" href="/bagian">PR 3</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EAS</a>
+                        <a class="nav-link active" href="/penggajian">EAS</a>
                     </li>
                 </ul>
             </div>

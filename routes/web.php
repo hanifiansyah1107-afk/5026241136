@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\NilaiController;
 use App\Http\Controllers\BagianController;
+use App\Http\Controllers\PenggajianController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -81,3 +82,8 @@ Route::post('/nilaikuliah/store', [NilaiController::class, 'store']);
 Route::get('/bagian', [BagianController::class, 'index']);
 Route::get('/bagian/tambah', [BagianController::class, 'tambah']);
 Route::post('/bagian/store', [BagianController::class, 'store']);
+
+Route::get('/penggajian', [PenggajianController::class, 'index']);
+Route::get('/penggajian/tambah', [PenggajianController::class, 'tambah']);
+Route::post('/penggajian/store', [PenggajianController::class, 'store']);
+
