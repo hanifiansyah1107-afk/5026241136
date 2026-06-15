@@ -24,6 +24,9 @@
                         <a class="nav-link active" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" href="/siswa">Siswa</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="/eas">PR 1</a>
                     </li>
                     <li class="nav-item">
