@@ -30,7 +30,6 @@
                 <td>
                     <a href="{{ route('edit_siswa', $row->NRP) }}" class="btn btn-warning">Edit</a>
 
-
                     <form action="{{ route('destroy_siswa', $row->NRP) }}" method="POST" style="display:inline;"
                         onsubmit="return confirm('Yakin ingin menghapus data ini?')">
                         @csrf
@@ -40,10 +39,11 @@
                     </form>
                 </td>
             </tr>
-
+        @empty
             <tr>
                 <td colspan="5">Belum ada data siswa.</td>
             </tr>
         @endforelse
+
     </table>
 @endsection

@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\SiswaController ;
 use App\Http\Controllers\NilaiController;
 use App\Http\Controllers\BagianController;
 use App\Http\Controllers\PenggajianController;
@@ -65,6 +66,13 @@ Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+Route::get('/siswa', [SiswaController::class, 'index'])->name('index_siswa');
+Route::get('/siswa/create', [SiswaController::class, 'create'])->name('create_siswa');
+Route::post('/siswa', [SiswaController::class, 'store'])->name('store_siswa');
+Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('edit_siswa');
+Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('update_siswa');
+Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('destroy_siswa');
 
 // CRUD Tabel Keranjang Belanja (EAS)
 Route::get('/eas', [KeranjangController::class, 'index']);
